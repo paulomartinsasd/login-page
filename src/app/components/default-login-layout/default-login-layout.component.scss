@@ -64,26 +64,30 @@ main {
       }
 
       button{
-      width: 100%;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 500;
-      border: none;
-      background: transparent;
-      padding: 12px 24px;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        background: transparent;
+        padding: 12px 24px;
         cursor: pointer;
 
-      &.btn-primary{
-        background-color: $primary-color;
-        color: #fff;
-      }
+        &:disabled{
+          opacity: 0.8;
+        }
 
-      &.btn-secondary{
-        border: 1px solid $primary-color;
-        color: $primary-color;
-        box-shadow: 0 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
+        &.btn-primary{
+          background-color: $primary-color;
+          color: #fff;
+        }
+
+        &.btn-secondary{
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          box-shadow: 0 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
+        }
       }
-    }
     }
   }
 }
